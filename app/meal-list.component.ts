@@ -39,6 +39,7 @@ export class MealListComponent {
 	showFilter: number = -1;
 	constructor() {
 		this.mealMenu.push(new Meal("food foo", "note foo", 123))
+		console.log(this.mealMenu[0].timeStamp);
 	}
 
 	addSeeds(meals: Meal[]) {
