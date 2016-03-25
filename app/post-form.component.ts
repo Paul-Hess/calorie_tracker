@@ -18,8 +18,6 @@ import {MealListComponent} from './meal-list.component';
 			<label> Calories:
 				<input type="number" [(ngModel)]="meal.calories">
 			</label>
-
-
 		</form>
 	`
 })
