@@ -1,6 +1,73 @@
-meal-item {
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+meal-menu {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: space-between;
+	min-height: 40vh;
+}
+
+.item-info {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	background: url('../../resources/image/meal.png');
+	background-size: cover;
+	background-position: 100%;
+	background-repeat: no-repeat;
+	background-color: #FFFFCC;
+	box-shadow: -2px 3px rgba(0,0,0, .7);
+	p {
+		cursor: pointer;
+		font-size: 1.4em;
+		font-wieght: bold;
+		color: #339933;
+
+		&:hover {
+			text-decoration: underline;
+			color: lighten(#339933, 10%);
+		}
+	}
+}
+
+.view-option {
+	flex: 1 1 100%;
+
+	p {
+		display: inline;
+	}
+}	
+
+.create-update-form {
+	background: rgba(#339933, .7);
+	box-shadow: -2px 3px rgba(0,0,0, .6);
 	display: flex;
 	flex-direction: column;
-	border: 4px inset teal;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+
+meal-item {
+	flex: .5 .5 33%;
+	display: flex;
+	flex-direction: column;
 	border-radius: 10px;
+}
+
+button {
+	border: none;
+	background: #FFFFCC;
+	color: #339933;
+	border-radius: 5px;
+	padding: .5em;
+}
+
+.post-form {
+	flex: 1 1 100%;
 }

@@ -52,6 +52,7 @@ sudo npm install bower -g [bower](bower.io)
     Leave a comment or open an issue here at GitHub for user paul-hess
     
 ## Technologies Used
+    Angular 2
     JavaScript, jQuery, node, gulp, bower
     Sass
     HTML
